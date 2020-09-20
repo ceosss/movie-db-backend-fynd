@@ -250,6 +250,6 @@ app.get("/port", async (req, res) => {
   // });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("SERVER STARTED AT PORT: ", 3000);
 });
